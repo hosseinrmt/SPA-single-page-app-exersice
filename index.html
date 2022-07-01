@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single-Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-auto ">
+  <div class="main-layot flex flex-row-reverse bg-slate-300">
+    <nav class="nav h-screen top-0 right-0 bg-slate-400 p-2 sticky">
+      <ul>
+        <li class="my-5">
+          <a data-link href="/SPA/"
+            class="hover:bg-gray-500 hover:text-white transition ease-out duration-100 nav__link no-underline block p-5 rounded-lg">داشبورد</a>
+        </li>
+        <li class="my-5">
+          <a data-link href="/products"
+            class="hover:bg-gray-500 hover:text-white transition ease-out duration-100 nav__link no-underline block p-5 rounded-lg">محصولات</a>
+        </li>
+        <li class="my-5">
+          <a data-link href="/posts"
+            class="hover:bg-gray-500 hover:text-white transition ease-out duration-100 nav__link no-underline block p-5 rounded-lg">پست
+            ها</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="app" class="h-[200vh] text-right p-8"></main>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
